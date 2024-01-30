@@ -5,7 +5,6 @@ import Navbar from "react-bootstrap/Navbar";
 import { Link, NavLink } from "react-router-dom";
 import "../pages/style.css";
 
-
 function Header() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
@@ -17,9 +16,7 @@ function Header() {
       updateNavbar(false);
     }
   }
-
   window.addEventListener("scroll", scrollHandler);
-
   return (
     <Navbar
       expanded={expand}
@@ -45,13 +42,7 @@ function Header() {
       <Navbar.Collapse id="responsive-navbar-nav" className="responsive-navbar">
         <Nav className="ms-auto" defaultActiveKey="#home">
           <Nav.Item>
-            <NavLink
-              className="nav-link"
-              to="/"
-              onClick={() => updateExpanded(false)}
-            >
-              Home
-            </NavLink>
+            <NavLink className="nav-link" to="/" onClick={() => updateExpanded(false)} > Home </NavLink>
           </Nav.Item>
           <Nav.Item>
             <NavLink
@@ -63,7 +54,7 @@ function Header() {
             </NavLink>
           </Nav.Item>
 
-          {/* <Nav.Item>
+          <Nav.Item>
             <NavLink
               className="nav-link"
               to="/project"
@@ -71,7 +62,7 @@ function Header() {
             >
               Projects
             </NavLink>
-          </Nav.Item> */}
+          </Nav.Item>
 
           <Nav.Item>
             <NavLink
@@ -86,7 +77,7 @@ function Header() {
           <Button
             onClick={() => {
               window.open(
-                "https://drive.google.com/file/d/1LSVLVmJA_3fhWtZPc_d_pHnkXhL4s-Oc/view?usp=drive_link"
+                // "https://drive.google.com/file/d/1LSVLVmJA_3fhWtZPc_d_pHnkXhL4s-Oc/view?usp=drive_link"
               );
             }}
             className="resumebtn"

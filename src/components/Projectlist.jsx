@@ -44,7 +44,7 @@ function Projectlist() {
                 ghLink="https://react-netflixweb-clone.netlify.app/"
               />
             </Col>
-
+            
             <Col md={4} className="project-card">
               <ProjectCard
                 imgPath={gridlinesbuilders}

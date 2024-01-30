@@ -10,6 +10,7 @@ import "../pages/style.css";
 
 
 function Home() {
+ 
   return (
     <div className='homepagebackground'>
       <Container>
